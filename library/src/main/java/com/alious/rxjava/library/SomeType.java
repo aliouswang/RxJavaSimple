@@ -1,6 +1,7 @@
 package com.alious.rxjava.library;
 
 import rx.Observable;
+import rx.functions.Func0;
 
 /**
  * Created by aliouswang on 16/9/26.
@@ -15,7 +16,12 @@ public class SomeType {
     }
 
     public Observable<String> valueObservable() {
-        return Observable.just(value);
+        return Observable.defer(new Func0<Observable<String>>() {
+            @Override
+            public Observable<String> call() {
+                return Observable.just(value);
+            }
+        });
     }
 
 }
