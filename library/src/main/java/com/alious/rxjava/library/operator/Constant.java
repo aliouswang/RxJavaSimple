@@ -7,6 +7,7 @@ package com.alious.rxjava.library.operator;
 public class Constant {
 
     public static final String [] countries = {
+            "CHINA", "MAYA", "America", "England", "JAPAN",
             "CHINA", "MAYA", "America", "England", "JAPAN"
     };
 
