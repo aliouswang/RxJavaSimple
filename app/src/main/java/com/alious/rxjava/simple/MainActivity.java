@@ -42,5 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("rxjava", "hello clicked");
             }
         });
+
+
     }
 }
